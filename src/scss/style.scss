@@ -1,0 +1,21 @@
+@import 'config';
+
+div {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 20px;
+  background: rgba(0, 0, 0, 0.1);
+  font-size: 1.125rem;
+}
+
+input {
+  padding: 5px;
+  width: 50px;
+  background-color: darksalmon;
+  border: none;
+  font-size: 1.125rem;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+}
