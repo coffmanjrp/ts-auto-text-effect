@@ -1,7 +1,8 @@
 "use strict";
 var textEl = document.getElementById('text');
 var speedEl = document.getElementById('speed');
-var text = 'We Love Programming!';
+// const text = 'We Love Programming!';
+var text = textEl.innerText;
 var idx = 1;
 var speed = 300 / speedEl.value;
 function writeText() {

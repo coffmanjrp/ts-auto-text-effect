@@ -1,6 +1,7 @@
 const textEl = document.getElementById('text') as HTMLHeadingElement;
 const speedEl = document.getElementById('speed') as HTMLInputElement;
-const text = 'We Love Programming!';
+// const text = 'We Love Programming!';
+const text = textEl.innerText;
 let idx = 1;
 let speed = 300 / speedEl.value;
 
