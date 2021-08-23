@@ -2,7 +2,7 @@ const textEl = document.getElementById('text') as HTMLHeadingElement;
 const speedEl = document.getElementById('speed') as HTMLInputElement;
 const text = textEl.innerText;
 let idx = 1;
-let speed = 300 / speedEl.value;
+let speed = 300 / +speedEl.value;
 
 function writeText() {
   textEl.innerText = text.slice(0, idx);
@@ -19,5 +19,5 @@ function writeText() {
 writeText();
 
 speedEl.addEventListener('input', (e) => {
-  speed = 300 / e.target.value;
+  speed = 300 / +(e.target as HTMLInputElement).value;
 });
