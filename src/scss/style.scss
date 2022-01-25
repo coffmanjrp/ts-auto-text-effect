@@ -1,4 +1,4 @@
-@import 'config';
+@use 'base';
 
 div {
   position: absolute;
@@ -11,9 +11,10 @@ div {
 input {
   padding: 5px;
   width: 50px;
-  background-color: darksalmon;
+  background-color: #676767;
   border: none;
   font-size: 1.125rem;
+  color: #f4f4f4;
   text-align: center;
   &:focus {
     outline: none;
